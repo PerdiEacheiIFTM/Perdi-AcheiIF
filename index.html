@@ -1,0 +1,300 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="pt-BR">
+  <link rel="stylesheet" href="estilo.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perdi & Achei - IFTM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- HEADER do bun -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-search"></i>
+        Perdi & Achei
+      </div>
+      <nav>
+        <a href="#hero">Início</a>
+        <a href="#items">Itens</a>
+        <a href="#cadastro">Cadastrar</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!--SECTION me -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Encontre o que Perdeu-Atualizado Semanalmente</h1>
+      <p>A plataforma profissional para reunir pessoas com seus pertences perdidos</p>
+      <div class="hero-buttons">
+        <a href="#items" class="btn btn-primary">
+          <i class="fas fa-search"></i>Ver Itens
+        </a>
+        <a href="#cadastro" class="btn btn-secondary">
+          <i class="fas fa-plus"></i>Cadastrar Item
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITEMS SECTION coli -->
+  <section class="items-section" id="items">
+    <h2 class="section-title">Itens Encontrados</h2>
+    
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" class="search-input" id="searchInput" placeholder="Buscar itens...">
+    </div>
+
+
+  <div class="gallery" id="gallery">
+  <!-- Item 1 -->
+  <div class="item-card">
+    <img src="midias/garrafas.jpeg" alt="várias garrafas" class="item-image">
+    <div class="item-content">
+      <h3 class="item-title">Garrafas</h3>
+      <p class="item-description">Encontrada na sala de achados e perdidos.</p>
+      <div class="item-meta">
+        <span class="item-price">Recuperar</span>
+        <button class="whatsapp-btn" onclick="toggleForm(this)">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+<form class="mini-form" onsubmit="sendToWhatsApp(event, 'Garrafas')">
+  <input type="text" placeholder="Seu Nome" required>
+  <input type="text" placeholder="Sua Turma" required>
+  <textarea placeholder="Descrição do Item" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="item-card">
+    <img src="midias/potes.jpeg" alt="vários potes e talheres juntos e empilhados" class="item-image">
+    <div class="item-content">
+      <h3 class="item-title">Potes e Talheres</h3>
+      <p class="item-description">Contém vários potes e talheres</p>
+      <div class="item-meta">
+        <span class="item-price">Recuperar</span>
+        <button class="whatsapp-btn" onclick="toggleForm(this)">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+      <form class="mini-form" onsubmit="sendToWhatsApp(event, 'Potes e Talheres')">
+  <input type="text" placeholder="Seu Nome" required>
+  <input type="text" placeholder="Sua Turma" required>
+  <textarea placeholder="Descrição do Item" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+      </form>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="item-card">
+    <img src="midias/casacos 11.jpeg" alt="4 casacos pendurados na cadeira" class="item-image">
+    <div class="item-content">
+      <h3 class="item-title">Casacos1</h3>
+      <p class="item-description">vários casacos de cores e tamanhos diferentes.</p>
+      <div class="item-meta">
+        <span class="item-price">Recuperar</span>
+        <button class="whatsapp-btn" onclick="toggleForm(this)">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+<form class="mini-form" onsubmit="sendToWhatsApp(event, 'Tipos de Casacos1')">
+  <input type="text" placeholder="Seu Nome" required>
+  <input type="text" placeholder="Sua Turma" required>
+  <textarea placeholder="Descrição do Item" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </div>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="item-card">
+    <img src="midias/casacos2.jpeg" alt="´varios tipos de casacos2" class="item-image">
+    <div class="item-content">
+      <h3 class="item-title">Casacos2</h3>
+      <p class="item-description">vários outros tipos de casacos.</p>
+      <div class="item-meta">
+        <span class="item-price">Recuperar</span>
+        <button class="whatsapp-btn" onclick="toggleForm(this)">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+<form class="mini-form" onsubmit="sendToWhatsApp(event, 'Tipos de Casacos2')">
+  <input type="text" placeholder="Seu Nome" required>
+  <input type="text" placeholder="Sua Turma" required>
+  <textarea placeholder="Descrição do Item" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </div>
+  </div>
+
+  <!-- Item 5 -->
+  <div class="item-card">
+    <img src="midias/casacos3.jpeg" alt="tipo de casaco3" class="item-image">
+    <div class="item-content">
+      <h3 class="item-title">Casacos3</h3>
+      <p class="item-description">vários tipos de casacos3.</p>
+      <div class="item-meta">
+        <span class="item-price">Recuperar</span>
+        <button class="whatsapp-btn" onclick="toggleForm(this)">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+      <form class="mini-form" onsubmit="sendToWhatsApp(event, 'Tipos de Casacos3')">
+  <input type="text" placeholder="Seu Nome" required>
+  <input type="text" placeholder="Sua Turma" required>
+  <textarea placeholder="Descrição do Item" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </div>
+  </div>
+
+  <!-- Item 6 -->
+  <div class="item-card">
+    <img src="midias/materiais.jpeg" alt="Maateriais escolares como cadernos e estojos" class="item-image">
+    <div class="item-content">
+      <h3 class="item-title">Materiais Escolares</h3>
+      <p class="item-description">Materiais escolares como cadernos,estojos,réguas e etc.</p>
+      <div class="item-meta">
+        <span class="item-price">Recuperar</span>
+        <button class="whatsapp-btn" onclick="toggleForm(this)">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+<form class="mini-form" onsubmit="sendToWhatsApp(event, 'Materiais Escolares')">
+  <input type="text" placeholder="Seu Nome" required>
+  <input type="text" placeholder="Sua Turma" required>
+  <textarea placeholder="Descrição do Item" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </div>
+  </div>
+</div><!-- FORM hahahahakdkd-->
+  <section class="form-section" id="cadastro">
+    <div class="form-container">
+      <h2 class="form-title">Cadastrar Item Perdido</h2>
+      <form id="itemForm">
+        <div class="form-group">
+          <input type="text" class="form-input" id="itemName" placeholder="Nome do Item" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-input" id="itemLocation" placeholder="Local onde foi encontrado" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-input form-textarea" id="itemDescription" placeholder="Descrição detalhada do item" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fab fa-whatsapp"></i> Enviar via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contato">
+    <div class="footer-content">
+      <h3>Perdi & Achei</h3>
+      <p>Conectando pessoas com seus pertences perdidos</p>
+      
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      
+      <p>© 2025 Perdi & Achei. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  
+  <a href="https://wa.me/5534999480921" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+   
+<script>
+  // Header scroll effect
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 100) {
+      header.classList.add('header-scrolled');
+    } else {
+      header.classList.remove('header-scrolled');
+    }
+  });
+
+  // Search functionality
+  const searchInput = document.getElementById('searchInput');
+  const items = document.querySelectorAll('.item-card');
+
+  searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    
+    items.forEach(item => {
+      const title = item.querySelector('.item-title').textContent.toLowerCase();
+      const description = item.querySelector('.item-description').textContent.toLowerCase();
+      
+      if (title.includes(searchTerm) || description.includes(searchTerm)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+
+  // Form submission principal (cadastro de item)
+  document.getElementById('itemForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('itemName').value;
+    const location = document.getElementById('itemLocation').value;
+    const description = document.getElementById('itemDescription').value;
+    
+    const message = `Novo item cadastrado:%0A%0A📦 *Nome:* ${name}%0A📍 *Local:* ${location}%0A📝 *Descrição:* ${description}%0A%0A_Item cadastrado via site Perdi&Achei_`;
+    
+    window.open(`https://wa.me/5534999480921?text=${message}`, '_blank');
+  });
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Mostrar/ocultar mini-form do item
+  function toggleForm(button) {
+    const form = button.closest('.item-content').querySelector('.mini-form');
+    form.style.display = form.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Enviar dados do mini-form para WhatsApp (com descrição do item)
+  function sendToWhatsApp(event, itemName) {
+    event.preventDefault();
+    const form = event.target;
+    const nome = form.querySelector('input[placeholder="Seu Nome"]').value;
+    const turma = form.querySelector('input[placeholder="Sua Turma"]').value;
+    const descricao = form.querySelector('textarea[placeholder="Descrição do Item"]').value;
+
+    const message = `Solicitação de recuperação de item:%0A%0A👤 *Nome:* ${nome}%0A🏫 *Turma:* ${turma}%0A📦 *Item:* ${itemName}%0A📝 *Descrição:* ${descricao}%0A%0A_Solicitação via site Perdi&Achei_`;
+
+    window.open(`https://wa.me/5534999480921?text=${message}`, '_blank');
+    form.reset();
+    form.style.display = 'none';
+  }
+</script>
