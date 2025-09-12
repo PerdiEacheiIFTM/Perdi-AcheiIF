@@ -10,7 +10,16 @@
   
 </head>
 <body>
-  <!-- HEADER do bun -->
+    <!-- SPLASH SCREEN -->
+<div id="splash">
+  <div id="splash-logo"><i class="fas fa-search"></i></div>
+  <h1>Perdi & Achei Carregando...</h1>
+  <audio id="introSound" src="midias/cinematic-hit-2-317169.mp3"></audio>
+</div>
+<!-- SITE REAL -->
+<div id="site">
+  <!-- Aqui entra o conteúdo do site -->
+<!-- HEADER do bun -->
   <header id="header">
     <div class="header-container">
       <div class="logo">
@@ -26,7 +35,7 @@
     </div>
   </header>
 
-  <!--SECTION me -->
+  <!--SECTION mimosa -->
   <section class="hero" id="hero">
     <div class="hero-content">
       <h1>Encontre o que Perdeu!</h1>
@@ -70,6 +79,7 @@
   <input type="text" placeholder="Sua Turma" required>
   <textarea placeholder="Descrição do Item" required></textarea>
   <button type="submit">Enviar</button>
+   >
 </form>
     </div>
   </div>
@@ -209,17 +219,17 @@
   <div class="galeria-resgatados">
     <div class="resgatado-card">
       <img src="midias/virginio.jpeg" alt="Pessoa com item">
-      <p><strong>Virginio</strong> - aliança recuperada e boneca da floflô recuperado! </p>
+      <p><strong>Pessoa</strong> - pendente </p>
     </div>
 
     <div class="resgatado-card">
       <img src="midias/gustavo limao.jpeg" alt="Pessoa com item">
-      <p><strong>Gustavo limão</strong> - Microfone recuperado!</p>
+      <p><strong>pessoa</strong> - pendente!</p>
     </div>
 
     <div class="resgatado-card">
       <img src="midias/ana costela.jpeg" alt="Pessoa com item">
-      <p><strong>Ana Costela</strong> - chapéu e bota recuperado!</p>
+      <p><strong>pessoa</strong> - pendente</p>
     </div>
   </div>
 </section>
@@ -322,4 +332,41 @@
     form.reset();
     form.style.display = 'none';
   }
+   src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+
+
+  // Criar estrelas
+  const splash = document.getElementById('splash');
+  for(let i=0;i<50;i++){
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.width = Math.random() * 3 + 'px';
+    star.style.height = star.style.width;
+    star.style.animationDuration = (Math.random()*2+1) + 's';
+    splash.appendChild(star);
+  }
+
+  // Esconde splash e mostra site
+  window.addEventListener("load", () => {
+    const site = document.getElementById("site");
+    const sound = document.getElementById("introSound");
+
+    // tenta tocar áudio
+    sound.play().catch(() => console.log("Som bloqueado até interação do usuário"));
+
+    setTimeout(() => {
+      splash.style.transition = "opacity 1s";
+      splash.style.opacity = 0;
+      setTimeout(() => {
+        splash.style.display = "none";
+        site.style.display = "block";
+        document.body.style.overflow = "auto"; // libera scroll
+      }, 1000);
+    }, 4000); // tempo de exibição do splash
+  });
+  
 </script>
+  
+</div>
