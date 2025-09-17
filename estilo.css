@@ -35,7 +35,7 @@
       transition: all 0.3s ease;
     }
     #header {
-      padding: 0;
+      padding: 0px;
     }
 
     .header-scrolled {
@@ -670,4 +670,5 @@
     min-height: 100vh;
   }
    
+
 
