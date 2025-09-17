@@ -34,6 +34,9 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
     }
+    #header {
+      padding: 0;
+    }
 
     .header-scrolled {
       padding: 1rem 2rem;
@@ -667,3 +670,4 @@
     min-height: 100vh;
   }
    
+
